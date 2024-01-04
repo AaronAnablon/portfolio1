@@ -23,7 +23,7 @@ const Home = ({ }, ref) => {
                 </span>
                 IS always Available for your needs</motion.h1>
               <p className='my-10 text-sm lg:mx-0 lg:text-xl'>Arrange a meeting for us to discuss your use case and let us make it up and running for your users.</p>
-              <a href="https://www.facebook.com/techibot"
+              <a target='blank' href="https://www.facebook.com/techibot"
                 className='rounded-full absolute -bottom-16 w-max flex items-center text-xl px-8 py-4 bg-[#2e840d]'>
                 Chat with me
               </a>
@@ -49,11 +49,11 @@ const Home = ({ }, ref) => {
             These represent a selection of projects I've crafted for my clients. Please note that these are placeholders designed to safeguard the privacy and confidentiality of my valued clientele.</p>
           <div className='grid justify-center z-10 lg:p-10 px-8 py-4 gap-2 lg:gap-8'>
             <div className='lg:flex grid gap-2 lg:gap-12'>
-              <StoriesCards navigateTo={"#"}
-                srcImage={"/2ndSection/music.png"}
+              <StoriesCards navigateTo={"https://portfolio1-tau-six.vercel.app/"}
+                srcImage={"/2ndSection/portfolio.png"}
                 width={200}
                 height={150}
-                text={"Facial recogniton web application that can record attendance of students or employees."}
+                text={"Portfolio and landing pages. This is developed using Next js"}
                 alt={"Stories cards"} />
               <StoriesCards navigateTo={"#"}
                 srcImage={"/2ndSection/music.png"}
