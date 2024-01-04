@@ -36,15 +36,15 @@ const Header = ({ setViewPort }) => {
                 ${prevScrollPos > 300 ?
                 (isMobileMenuOpen ? 'h-screen bg-gray-700 z-50 fixed' : 'bg-gray-700 opacity-80 ')
                 :
-                (isMobileMenuOpen ? 'h-screen bg-gray-700 z-50' : "bg-gradient-to-r from-[rgba(46,131,14,1)]  to-[rgba(65,65,73,0.5)] to-60%")
+                (isMobileMenuOpen ? 'h-screen bg-gray-700 z-50' : "bg-gradient-to-r from-[rgba(10,92,110,0.989233193277311)]  to-[rgba(2,0,36,1)] to-80%")
             }
                 ${isScrolled ? "hidden" : "visible"} `}>
             <div className='max-w-screen-2xl w-full flex items-center relative justify-between'>
-                <div className={`
+                <div className={`lg:ml-16 rounded-full bg-white 
                     ${isMobileMenuOpen && 'hidden'}`}>
                     <Image height={50} width={50}
                         onClick={() => handleScrollToSection("homeRef")}
-                        className='lg:ml-16' src={"/Logo.png"} alt='logo' />
+                        className='' src={"/Logo.png"} alt='logo' />
                 </div>
                 <div className={`text-gray-100 text-xl items-center 
                 ${isMobileMenuOpen ? 'grid w-full justify-center' : 'flex justify-end space-x-4 md:space-x-8 '}`}>
@@ -56,17 +56,24 @@ const Header = ({ setViewPort }) => {
                     </div>
                     <button className={`py-4 px-6 cursor-pointer hover:bg-gray-500 rounded-full 
                     ${isMobileMenuOpen ? 'visible' : 'hidden md:block'}`}
-                        onClick={() => handleScrollToSection("homeRef")}>Home</button>
+                        onClick={() => handleScrollToSection("homeRef")}>Blog</button>
                     <button className={`py-4 px-6 cursor-pointer whitespace-nowrap hover:bg-gray-500 rounded-full 
                     ${isMobileMenuOpen ? 'visible' : 'hidden md:block'}`}
-                        onClick={() => handleScrollToSection("aboutRef")}>About Us</button>
+                        onClick={() => handleScrollToSection("aboutRef")}>About Me</button>
                     <button className={`py-4 px-6 cursor-pointer whitespace-nowrap hover:bg-gray-500 rounded-full 
                     ${isMobileMenuOpen ? 'visible' : 'hidden md:block'}`}
-                        onClick={() => handleScrollToSection("beAGuestRef")}>Be a Guest</button>
-                    <Link href={'/#'}
+                        onClick={() => handleScrollToSection("beAGuestRef")}>Skills</button>
+                    <a
+                        href="https://www.facebook.com/techibot"
                         className={`py-4 px-8 cursor-pointer whitespace-nowrap hover:bg-gray-500 rounded-full bg-gray-500 
-                    ${isMobileMenuOpen ? 'visible' : 'hidden md:block'}`}
-                        onClick={() => handleScrollToSection("homeRef")}>Listen Now</Link>
+                             ${isMobileMenuOpen ? 'visible' : 'hidden md:block'}`}
+                        onClick={() => handleScrollToSection("homeRef")}
+                        target="_blank" // Open link in a new tab/window
+                        rel="noopener noreferrer" // Recommended for security reasons
+                    >
+                        Chat with me
+                    </a>
+
                 </div>
             </div>
         </div>

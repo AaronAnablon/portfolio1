@@ -8,6 +8,9 @@ export const metadata = {
   title: 'Aaron Anablon Portfolio',
   description: 'Aaron anablon Portfolio1',
   icons: [{ rel: 'icon', url: Favicon.src }],
+  verification: {
+    google: "hIjirSgOXU2TNGYRlajftvngJ3Os6fyauSrQhzNzWxc",
+  },
 }
 
 export default function RootLayout({ children }) {

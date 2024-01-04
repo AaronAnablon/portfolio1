@@ -48,7 +48,7 @@ export default function App() {
     };
   }, []);
   return (
-    <main className={`bg-[#11111b] text-white overflow-hidden text-sm lg:text-lg font-Montserrat font-normal`}>
+    <main className={`bg-[#11111b] text-gray-200 overflow-hidden text-sm lg:text-lg font-Montserrat font-normal`}>
       <Header setViewPort={setViewPort} />
       <div className={`max-w-screen-2xl relative mx-auto`}>
         <div className='fixed z-40 rounded-full bottom-10 right-10' onClick={() => scrollToTop()}>
