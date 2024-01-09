@@ -32,8 +32,8 @@ const Home = ({ }, ref) => {
           <div className='relative flex px-10 justify-center'>
             <Image className='absolute right-10 -bottom-10 pb-10' src={"1stSection/Sound_Waves_icon.svg"} width={100} height={100} alt='blog' />
             <Image className='absolute right-14 lg:w-max w-20 lg:right-32 top-3' src={"/Logo.png"} width={100} height={100} alt='blog' />
-            <Image className='z-10 w-72 rounded-full border-2 border-blue-600 lg:w-max' src={"/1stSection/profile.png"} width={506} height={660} alt='blog' />
-            <Image className='absolute lg:-left-14 left-6 z-20 bottom-14 lg:bottom-24 w-64 lg:w-max' src={"/1stSection/horizontal_Image.png"} width={323} height={85} alt='blog' />
+            <Image className='z-10 w-72 rounded-full border-2 border-blue-600 lg:w-96' src={"/1stSection/profile.png"} width={506} height={660} alt='blog' />
+            <Image className='absolute -lg:left-14 left-6 z-20 bottom-14 lg:bottom-24 w-64 lg:w-max' src={"/1stSection/horizontal_Image.png"} width={323} height={85} alt='blog' />
           </div>
         </div>
         <div className='grid gap-6 relative justify-center'>
@@ -53,18 +53,18 @@ const Home = ({ }, ref) => {
                 srcImage={"/2ndSection/portfolio.png"}
                 width={200}
                 height={150}
-                text={"Portfolio and landing pages. This is developed using Next js"}
+                text={"A carefully crafted portfolio with animations and transitions that may suit your needs. This is developed using Next js"}
                 alt={"Stories cards"} />
-              <StoriesCards navigateTo={"#"}
-                srcImage={"/2ndSection/music.png"}
+              <StoriesCards navigateTo={"https://moon-delivery.vercel.app"}
+                srcImage={"/2ndSection/ecommerce.png"}
                 width={200}
-                text={"Facial recogniton web application that can record attendance of students or employees."}
+                text={"E-commerce web application. Web application that have GUI for Customers, Sellers, Rider and admin."}
                 height={150}
                 alt={"Stories cards"} />
             </div>
             <div className='lg:flex grid gap-2 lg:gap-12'>
-              <StoriesCards navigateTo={"#"}
-                srcImage={"/2ndSection/music.png"}
+              <StoriesCards navigateTo={"https://ifsuattendance.netlify.app"}
+                srcImage={"/2ndSection/faceRecognition.png"}
                 width={200}
                 height={150}
                 text={"Facial recogniton web application that can record attendance of students or employees."}
