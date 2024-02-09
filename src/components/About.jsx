@@ -7,6 +7,7 @@ const About = ({ title }, ref) => {
     '/4thSection/mes2.png',
     '/4thSection/mes3.png',
     '/4thSection/mes1.png',
+    '/4thSection/mes4.png',
   ];
   return (
     <div ref={ref}>
